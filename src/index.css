@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Raleway:wght@500&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-container{
+  @apply py-[10vh] px-[5vw] 
+}
+
+
+.mini-container{
+  @apply py-[5vh] px-[3vw] 
+}
+.primary-btn{
+  @apply text-lg   px-4 py-1 rounded-full border  font-primary 
+}
+.flx-row-center{
+  @apply flex flex-row justify-center items-center 
+}
+.flx-row-between{
+  @apply flex flex-row justify-between items-center 
+}
+.flx-col{
+  @apply flex flex-col  justify-center gap-10
+}
+.heading{
+  @apply text-center font-heading text-5xl text-shade tracking-wider
+}
+.popup-window{
+  @apply w-screen h-screen  bg-primary bg-opacity-30 fixed z-30 justify-center items-center flex flex-row top-0 left-0 
+}
+.primary-btn-feed{
+  @apply rounded-lg flx-row-center text-white  px-4 py-1 bg-background border border-primary
+}
