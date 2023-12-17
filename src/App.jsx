@@ -1,20 +1,21 @@
 import React,{useState,useEffect} from 'react'
 import { NavLinks } from './routes.config';
 import Navigation from './components/Navigation';
+import { motion, AnimatePresence } from "framer-motion"
 
 
 const App = () => {
   return (
-     <div>
+     <AnimatePresence>
         {NavLinks.map((item,index)=>{
           return(
-            <section id={item.path} key={index}>
+            <section   id={item.id} key={index}>
                 {item.component}
             </section>
           )
         })}
         <Navigation/>
-     </div>
+     </AnimatePresence>
   )
 }
 

@@ -10,22 +10,22 @@ import Footer from './components/Footer';
 export const  NavLinks=[
     {
         route:'About',
-        path:'#about',
+        id:'about',
         component:<><Header/><About/></>
     },
     {
         route:'Project',
-        path:'#project',
+        id:'project',
         component:<Project/>
     },
     {
         route:'Work',
-        path:'#work',
+        id:'work',
         component:<Work/>
     },
     {
         route:'Contact',
-        path:'#footer',
+        id:'contact',
         component:<Footer/>
     }
 ]

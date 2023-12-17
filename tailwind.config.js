@@ -10,8 +10,8 @@ export default {
         dark:'#0B0C10',
         dark_light:'#1F2833',
         primary:'#C5C6C7',
-        theme:'#66FCF1',
-        shade:'#66FCF1',
+        shade1:'#fff',
+        shade2:'#33CAC1',
         background:"#2B3842"
         
       },

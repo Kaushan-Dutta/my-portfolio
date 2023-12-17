@@ -2,6 +2,7 @@ import React from 'react'
 import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub } from "react-icons/fa";
 import { GiStarFormation } from "react-icons/gi";
+import { motion } from "framer-motion"
 
 const style={
   wrapper:`w-[200px]  primary-btn flx-row-center `
@@ -9,7 +10,7 @@ const style={
 const Header = () => {
   return (
     <section className='primary-container bg-dark_light  h-screen flx-col'>
-        <div className=' flx-col text-center text-white md:-translate-y-5'>
+        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:2,ease:'easeOut'}} className=' flx-col text-center text-white md:-translate-y-5'>
         <p className='md:text-7xl text-5xl font-heading flx-row-center flex-wrap gap-2'>
           STUDENT&nbsp;
           <span>
@@ -24,11 +25,11 @@ const Header = () => {
         </p>
         <p className='text-lg md:w-2/5  mx-auto'>Alias, minus mollitia facere asperiores nulla illo hic ducimus sit, soluta voluptatibus vitae saepe accusamus vel aperiam deserunt corrupti quas dolorem quam!</p>
         <div className='flx-row-center md:space-x-5 gap-5 flex-wrap'>
-          <a href="" className={`${style.wrapper} bg-theme text-dark` }><FaGithub className='text-lg'/>&nbsp;&nbsp;My Contribution</a>
-          <a href="" className={style.wrapper}><GiStarFormation className='text-lg'/>&nbsp;&nbsp;My Resume</a>  
+          <a href="" className={`${style.wrapper} bg-shade2 text-dark ` }><FaGithub className='text-lg'/>&nbsp;&nbsp;My Contribution</a>
+          <a href="" className={style.wrapper + 'border border-shade1'}><GiStarFormation className='text-lg'/>&nbsp;&nbsp;My Resume</a>  
         </div> 
-        </div>
-      </section>
+        </motion.div>
+    </section>
 
   )
 }

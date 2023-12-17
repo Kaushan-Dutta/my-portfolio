@@ -32,19 +32,52 @@ export const Projects=[
     {
         name:'',
         image:'',
-        tech:[],
+        tech:['all','frontend'],
+        description:'',
+    },
+    
+    {
+        name:'',
+        image:'',
+        tech:['all','frontend'],
+        description:'',
+    },
+    
+    {
+        name:'',
+        image:'',
+        tech:['all','fullstack'],
+        description:'',
+    },
+    {
+        
+        name:'',
+        image:'',
+        tech:['all','blockchain','spotlight'],
         description:'',
     },
     {
         name:'',
         image:'',
-        tech:[],
+        tech:['all','blockchain'],
         description:'',
     },
     {
         name:'',
         image:'',
-        tech:[],
+        tech:['all','spotlight'],
+        description:'',
+    },
+    {
+        name:'',
+        image:'',
+        tech:['all','spotlight'],
+        description:'',
+    },
+    {
+        name:'',
+        image:'',
+        tech:['all','spotlight'],
         description:'',
     },
 ]
@@ -55,15 +88,17 @@ export const ProjectHeader=[
     {
         heading:'Frontend',
     },
-    {
-        heading:'FullStack ',
-    },
+    
     {
         heading:'Blockchain',
     },
     {
+        heading:'FullStack',
+    },
+    {
         heading:'Spotlight',
-    }
+    },
+    
 ]
 export const Experience=[
     {
@@ -93,6 +128,12 @@ export const Achievement=[
     {
         achieve:'145+',
         platform:'PROBLEM SOLVING',
+        description:' Quis excepturi cumque culpa, necessitatibus quo exercitationem dolores error dicta veritatis omnis fugit! Consequatur, fugiat',
+        link:''
+    },
+    {
+        achieve:'445+',
+        platform:'GITHUB',
         description:' Quis excepturi cumque culpa, necessitatibus quo exercitationem dolores error dicta veritatis omnis fugit! Consequatur, fugiat',
         link:''
     },

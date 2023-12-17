@@ -9,13 +9,13 @@
   @apply py-[10vh] px-[5vw] 
 }
 
-
-.mini-container{
-  @apply py-[5vh] px-[3vw] 
-}
 .primary-btn{
-  @apply text-lg   px-4 py-1 rounded-full border  font-primary 
+  @apply text-lg   px-4 py-1 rounded-full   font-primary 
 }
+.primary-btn-feed{
+  @apply rounded-lg flx-row-center text-white  px-4 py-1  border border-primary
+}
+
 .flx-row-center{
   @apply flex flex-row justify-center items-center 
 }
@@ -25,12 +25,30 @@
 .flx-col{
   @apply flex flex-col  justify-center gap-10
 }
+.flx-col-inner{
+  @apply flex flex-col  justify-center gap-3
+}
+
 .heading{
-  @apply text-center font-heading text-5xl text-shade tracking-wider
+  @apply text-center font-heading text-5xl text-shade2 tracking-wider
 }
+
 .popup-window{
-  @apply w-screen h-screen  bg-primary bg-opacity-30 fixed z-30 justify-center items-center flex flex-row top-0 left-0 
+  @apply w-screen h-screen px-5 md:px-0  bg-primary bg-opacity-10 fixed z-30 justify-center items-center flex flex-row top-0 left-0 
 }
-.primary-btn-feed{
-  @apply rounded-lg flx-row-center text-white  px-4 py-1 bg-background border border-primary
+
+::-webkit-scrollbar {
+  @apply bg-dark_light w-2
+
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-shade2 rounded-md w-2
+}
+
+.container::-webkit-scrollbar{
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
 }

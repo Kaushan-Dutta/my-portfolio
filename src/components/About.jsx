@@ -2,16 +2,16 @@ import React from 'react'
 import {Education,Skills} from './static/Static';
 
 const style={
-  edu_head:`w-96 text-lg text-white   px-5 py-2 rounded-full border  font-primary flx-row-between`
+  edu_head:`w-96 text-lg text-white   px-5 py-2 rounded-full border   font-primary flx-row-between`
 }
 const About = () => {
   return (
     <>
-    <section className='primary-container   bg-background'>
+    <section className='primary-container   bg-background' >
 
-      <div className=' text-center flx-col gap-5'>
+      <div className=' text-center flx-col gap-5' >
         <img src="" className='mx-auto rounded-full w-60 h-60 border-2' alt="Profile Image"/>
-        <p className='text-5xl font-heading text-shade'>I'm Kaushan Dutta</p>
+        <p className='text-5xl font-heading text-shade2'>I'm Kaushan Dutta</p>
         <p className='text-lg font-primary text-white md:w-2/3 w-full mx-auto'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident aperiam adipisci impedit doloribus sit ex, ducimus modi voluptatibus fugiat veniam ea. Reprehenderit voluptatem nihil non soluta minima numquam magnam ipsa!</p>
       </div>
 
