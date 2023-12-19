@@ -12,7 +12,7 @@ const style={
 const Header = () => {
   return (
     <section className='primary-container bg-dark_light  h-screen flx-col'>
-        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:2,ease:'easeOut'}} className=' flx-col text-center text-white md:-translate-y-5'>
+        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:2,ease:'easeOut'}} className=' flx-col text-center text-white md:-translate-y-5 -translate-y-10'>
         <p className='md:text-7xl text-5xl font-heading flx-row-center flex-wrap gap-2'>
           STUDENT&nbsp;
           <span>
