@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { Projects, ProjectHeader } from './static/Static'
 import { FiExternalLink } from "react-icons/fi";
-
+import { Link } from 'react-router-dom';
 
 const Project = () => {
   const [heading, setHeading] = useState('all');
@@ -24,12 +24,12 @@ const Project = () => {
           <div className="w-[350px] h-[400px] rounded-md shadow-lg bg-dark_light" key={id}>
             <div className="h-2/5 p-5 flex-col gap-2 flex">
               <div className='flx-row-between font-primary'>
-                <p className='text-shade1 text-lg'>Weather App</p><a href="/" className='text-shade2'><FiExternalLink /></a>
+                <p className='text-shade1 text-lg'>{obj.name}</p><Link to={obj.link} className='text-shade2'><FiExternalLink /></Link>
               </div>
-              <p className='text-md text-primary font-mono'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p className='text-md text-primary font-primary'>{obj.description}</p>
             </div>
-            <div className='h-3/5 border-2'>
-              <img src={obj.img} alt="Project Image" className='w-full h-full object-cover' />
+            <div className='h-3/5 '>
+              <img src={obj.image} alt="Project Image" className='w-full h-full object-cover' />
             </div>
           </div>
         ))}

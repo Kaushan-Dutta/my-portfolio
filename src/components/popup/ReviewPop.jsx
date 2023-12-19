@@ -27,7 +27,7 @@ const ReviewPop = ({ setLikestate = null, setUnlikestate = null }) => {
                 <div className='flx-row-between p-5 text-white'>
                     <p className='flex flex-row items-center font-heading text-md'>
                         {setLikestate ? <FaRegThumbsUp className={style.thumbs} /> : <FaRegThumbsDown className={style.thumbs} />}&nbsp;
-                        {setLikestate ? `Give me the feedback to work better` : `Please give me the feedback to improve my work`}
+                        {setLikestate ? `Give me feedback to work better` : `Please give feedback to improve at my work`}
                     </p>
                     <RxCross1 className=' cursor-pointer' onClick={() => setLikestate ? setLikestate(false) : setUnlikestate(false)} />
                 </div>
