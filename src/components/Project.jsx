@@ -28,8 +28,8 @@ const Project = () => {
               </div>
               <p className='text-md text-primary font-primary'>{obj.description}</p>
             </div>
-            <div className='h-3/5 '>
-              <img src={obj.image} alt="Project Image" className='w-full h-full object-cover' />
+            <div className='h-3/5 p-1 '>
+              <img src={obj.image} alt="Project Image" className='w-full h-full object-cover rounded-md' />
             </div>
           </div>
         ))}
