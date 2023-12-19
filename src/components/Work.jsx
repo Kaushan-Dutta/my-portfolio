@@ -1,6 +1,7 @@
 import React from 'react'
 import {  Experience, Achievement } from './static/Static'
 import { FiExternalLink } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 const BlockComponent=({id,date,description,company})=>(
   <>
@@ -51,7 +52,7 @@ const Work = () => {
               <p className='font-heading text-shade2 text-5xl'>{ele.achieve}</p>
               <p className='font-heading text-shade2 text-lg'>{ele.platform}</p>
               <p  className=' text-primary text-md '>{ele.description}</p>
-              <a href=""  className=' text-shade1 flx-row-center'>View&nbsp;<FiExternalLink/> </a>
+              <Link to={ele.link}  className=' text-shade1 flx-row-center'>View&nbsp;<FiExternalLink/> </ Link>
               
             </div>
           ))}
