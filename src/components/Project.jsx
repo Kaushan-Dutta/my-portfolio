@@ -21,14 +21,14 @@ const Project = () => {
       </div>
       <div className="flx-row-center flex-wrap gap-5">
         {Projects.filter((item)=>item.tech.includes(heading) ).map((obj, id) => (
-          <div className="w-[350px] h-[400px] rounded-md shadow-lg bg-dark_light" key={id}>
+          <div className="w-[350px] h-[380px] rounded-md shadow-lg bg-dark_light" key={id}>
             <div className="h-2/5 p-5 flex-col gap-2 flex">
               <div className='flx-row-between font-primary'>
                 <p className='text-shade1 text-lg'>{obj.name}</p><Link to={obj.link} className='text-shade2'><FiExternalLink /></Link>
               </div>
               <p className='text-md text-primary font-primary'>{obj.description}</p>
             </div>
-            <div className='h-3/5 p-1 '>
+            <div className='h-3/5  p-3'>
               <img src={obj.image} alt="Project Image" className='w-full h-full object-cover rounded-md' />
             </div>
           </div>
