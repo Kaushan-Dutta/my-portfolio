@@ -21,7 +21,7 @@ const Project = () => {
       </div>
       <div className="flx-row-center flex-wrap gap-5">
         {Projects.filter((item)=>item.tech.includes(heading) ).map((obj, id) => (
-          <div className="w-[350px] h-[380px] rounded-md shadow-lg bg-dark_light" key={id}>
+          <div className="w-[350px] h-[400px] rounded-md shadow-lg bg-dark_light" key={id}>
             <div className="h-2/5 p-5 flex-col gap-2 flex">
               <div className='flx-row-between font-primary'>
                 <p className='text-shade1 text-lg'>{obj.name}</p><Link to={obj.link} className='text-shade2'><FiExternalLink /></Link>
